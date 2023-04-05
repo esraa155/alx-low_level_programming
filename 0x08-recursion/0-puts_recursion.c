@@ -1,16 +1,16 @@
 #include "main.h"
 
-void _puts_recursion(char *h)
+void _puts_recursion(char *c)
 {
 
-	if (*h == '\0')
+	if (*c == '\0')
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		_putchar(*h);
-		_puts_recursion(h + 1);
+		_putchar(*c);
+		_puts_recursion(c + 1);
 	}
 
 }
