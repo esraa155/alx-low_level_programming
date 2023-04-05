@@ -1,10 +1,4 @@
-#include "main.h"
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */ 
+#include "stdio.h"
 
 void _puts_recursion(char *c)
 {
@@ -19,5 +13,11 @@ void _puts_recursion(char *c)
 		_puts_recursion(c + 1);
 	}
 
+}
+
+int main(void)
+{
+    _puts_recursion("Puts with recursion");
+    return (0);
 }
 
