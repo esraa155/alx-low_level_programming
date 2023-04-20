@@ -6,9 +6,9 @@
  * @f: void function
  */
 
-void print_name(char *name, void (*x)(char *))
+void print_name(char *name, void (*f)(char *))
 {
-	if (name && x)
+	if (name && f)
 	{
 		f(name);
 	}
